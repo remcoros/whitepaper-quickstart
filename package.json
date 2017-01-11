@@ -1,0 +1,32 @@
+{
+  "name": "whitepaper-quickstart",
+  "version": "1.0.0",
+  "description": "Quickstart for creating good looking whitepapers in Markdown.",
+  "homepage": "https://github.com/remcoros/whitepaper-quickstart",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remcoros/whitepaper-quickstart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/remcoros/whitepaper-quickstart/issues"
+  },
+  "author": {
+    "name": "Remco Ros",
+    "email": "remcoros@live.nl",
+    "url": "https://github.com/remcoros"
+  },
+  "keywords": [
+    "markdown",
+    "whitepaper",
+    "pdf",
+    "html"
+  ],
+  "scripts": {
+    "pdf": "node node_modules/electron-pdf-remarkable/cli.js index.md index.pdf --marginsType 0 -c .\\pdf.css",
+    "html": "node node_modules/electron-pdf-remarkable/cli.js index.md index.html --marginsType 0 -c .\\pdf.css"
+  },  
+  "license": "MIT",
+  "dependencies": {
+    "electron-pdf-remarkable": "^1.1.1"
+  }
+}

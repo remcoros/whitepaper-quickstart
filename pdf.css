@@ -1,0 +1,42 @@
+/*
+@import 'github-markdown.css';
+*/
+
+@page  
+{ 
+    size: auto;   /* auto is the initial value */ 
+
+    /* this affects the margin in the printer settings */ 
+    margin: 10mm 10mm 10mm 10mm;  
+}
+
+.markdown-body {
+    font-size: 10pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.summary {
+    padding-left: 25%;
+}
+
+.columns2 {
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+}
+
+.columns2 p {
+    
+}
+
+.page-break
+{
+	page-break-before: always;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+	margin-top:0;
+	padding-top:0;
+}
